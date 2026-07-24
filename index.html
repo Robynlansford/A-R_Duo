@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A&R — Psychedelic Rock Ritual · Boise, Idaho</title>
+<meta name="description" content="A&R is a psychedelic rock duo out of Boise, Idaho. Scroll to descend into the Red Ritual — then catch the rites live.">
+<meta property="og:title" content="A&R — Psychedelic Rock Ritual">
+<meta property="og:description" content="Two bodies. One storm. A psychedelic rock duo out of Boise, Idaho.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og.jpg">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preload" href="assets/fonts/f3.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/f11.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="css/ar.css?v=3">
+</head>
+<body>
+
+<div class="cursor" aria-hidden="true"></div>
+
+<!-- loader -->
+<div id="loader" role="status" aria-label="Loading the ritual">
+  <div class="core">
+    <svg viewBox="0 0 100 100" aria-hidden="true">
+      <g class="ring">
+        <circle cx="50" cy="50" r="44" fill="none" stroke="#ff2438" stroke-width="3.5"
+                stroke-dasharray="207 70" stroke-linecap="round" opacity=".9"/>
+      </g>
+      <text x="50" y="60" text-anchor="middle" font-family="Big Shoulders, sans-serif"
+            font-size="34" font-weight="800" fill="#f2e9e4" letter-spacing="1">AR</text>
+    </svg>
+    <div class="word">RED RITUAL</div>
+    <div class="track"><div class="fill"></div></div>
+    <div class="pct">000 / SIGNAL</div>
+  </div>
+</div>
+
+<!-- fixed chrome -->
+<header class="bar">
+  <a class="sigil" href="index.html" aria-label="A&R home">
+    <img src="assets/logo.jpg" alt="A&amp;R logo">
+  </a>
+  <nav aria-label="Primary">
+    <a href="band.html">The Duo</a>
+    <a href="music.html">Sound</a>
+    <a href="tour.html">Rites</a>
+    <a href="contact.html">Summon</a>
+    <a class="cta" href="tour.html">Get Tickets</a>
+  </nav>
+</header>
+
+<!-- ritual HUD -->
+<aside id="hud" aria-hidden="true">
+  <div class="idx">01 / 06</div>
+  <div class="track"><div class="fill"></div></div>
+  <div class="chap">THE SIGIL</div>
+  <div class="freq"><i></i><i></i><i></i><i></i><i></i></div>
+</aside>
+
+<!-- ============ THE FILM ============ -->
+<div id="ritualDriver">
+  <div id="stage">
+    <canvas id="film" aria-hidden="true"></canvas>
+    <canvas id="fx" aria-hidden="true"></canvas>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+    <div class="fade-out" aria-hidden="true"></div>
+
+    <!-- Chapter I — hero -->
+    <div class="beat hero" data-in="-0.1" data-peak="0" data-out="0.105">
+      <div class="stack">
+        <h1>A<span class="amp">&amp;</span>R</h1>
+        <div class="tag">Psychedelic Rock Ritual &middot; Boise, Idaho</div>
+      </div>
+      <div class="hint"><span>Scroll to descend</span><span class="pulse"></span></div>
+    </div>
+
+    <!-- Chapter II — the threshold -->
+    <div class="beat left" data-in="0.17" data-peak="0.245" data-out="0.315">
+      <div class="rule"></div>
+      <div class="kicker">Chapter II &middot; The Threshold</div>
+      <h2>FALL<br><span class="psych">Through</span></h2>
+      <p>Every set opens the same door. The sigil burns, the floor gives way,
+         and the only way out is deeper in.</p>
+    </div>
+
+    <!-- Chapter III — the instrument -->
+    <div class="beat right" data-in="0.37" data-peak="0.44" data-out="0.505">
+      <div class="rule"></div>
+      <div class="kicker">Chapter III &middot; The Instrument</div>
+      <h2>SIX STRINGS<br>ONE <span class="psych">Pulse</span></h2>
+      <p>A cherry SG run through tube heat and holy crunch. When it hums,
+         the room hums with it.</p>
+    </div>
+
+    <!-- Chapter IV — the stage -->
+    <div class="beat left" data-in="0.545" data-peak="0.615" data-out="0.675">
+      <div class="rule"></div>
+      <div class="kicker">Chapter IV &middot; The Stage</div>
+      <h2>TWO BODIES<br>ONE <span class="psych">Storm</span></h2>
+      <p>A&amp;R started in 2021 in a windowless practice room off Vista Avenue &mdash; two amps, two guitars,
+         a space heater, and a pact: never add a backing track. Just two guitars and two voices, a plethora
+         of special guests, and it has to earn its place every night.</p>
+    </div>
+
+    <!-- Chapter V — transcendence -->
+    <div class="beat center" data-in="0.71" data-peak="0.78" data-out="0.85">
+      <div>
+        <div class="kicker">Chapter V &middot; Transcendence</div>
+        <h2>LET THE <span class="psych">Bloom</span><br>TAKE YOU</h2>
+      </div>
+    </div>
+
+    <!-- Chapter VI — the mark / finale -->
+    <div class="beat finale" data-in="0.885" data-peak="0.945" data-out="2">
+      <div>
+        <div class="kicker">Chapter VI &middot; The Mark</div>
+        <div class="actions">
+          <a class="btn solid" href="#sound">FEEL THE SOUND</a>
+          <a class="btn ghost" href="#rites">See the Rites</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ THE WORLD BELOW ============ -->
+<canvas id="psy" aria-hidden="true"></canvas>
+<main class="world">
+
+  <!-- manifesto -->
+  <section class="block landing manifesto">
+    <div class="shell">
+      <blockquote class="reveal">
+        &ldquo;We are not a band. We are a <span class="lit">frequency</span>
+        that borrowed two bodies in <span class="lit">Boise</span>.&rdquo;
+        <cite>&mdash; A&amp;R, somewhere on the High Desert</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="row">
+      <span>PSYCHEDELIC ROCK <i class="star">&#10022;</i> <b class="fill">BOISE IDAHO</b> <i class="star">&#10022;</i>
+      TWO BODIES ONE STORM <i class="star">&#10022;</i> <b class="fill">THE RED RITUAL</b> <i class="star">&#10022;</i></span>
+      <span>PSYCHEDELIC ROCK <i class="star">&#10022;</i> <b class="fill">BOISE IDAHO</b> <i class="star">&#10022;</i>
+      TWO BODIES ONE STORM <i class="star">&#10022;</i> <b class="fill">THE RED RITUAL</b> <i class="star">&#10022;</i></span>
+    </div>
+  </div>
+
+  <!-- the duo -->
+  <section class="block" id="duo">
+    <div class="shell">
+      <div class="eyebrow reveal"><span class="n">01</span> The Duo</div>
+      <h2 class="title reveal d1">AARON <span class="psych">&amp;</span> ROBYN</h2>
+      <p class="lede reveal d2">Formed in a rented practice room off Vista Ave with two amps, two guitars and
+        <em>no intention of staying quiet</em>. Two guitars, two voices, two records and three
+        hundred shows later, the ritual still starts the same way: lights down, sigil up.</p>
+      <div class="duo-grid">
+        <article class="member reveal d1" data-tilt>
+          <div class="art"><img src="assets/Aaron_.jpg" alt="AARON silhouetted on stage with guitar against a wall of red light"></div>
+          <div class="sig">A</div>
+          <div class="meta">
+            <div class="role">Acoustic Guitar &middot; Lead Vocals</div>
+            <h3>AARON</h3>
+            <p>Plays a well-worn acoustic through a wall of tube heat. Sings like the
+               desert is listening.</p>
+          </div>
+        </article>
+        <article class="member reveal d2" data-tilt>
+          <div class="art"><img src="assets/Robyn_.jpg" alt="ROBYN silhouetted mid-riff against red stage light"></div>
+          <div class="sig">R</div>
+          <div class="meta">
+            <div class="role">Lead Guitar &middot; Backup Vocals &middot; Crunch</div>
+            <h3>ROBYN</h3>
+            <p>Plays a cherry-red SG through a wall of tube heat, answering every one of
+               Aaron&rsquo;s lines with a lead of his own, then steps up to the mic when the
+               choruses need two voices instead of one.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- sound -->
+  <section class="block" id="sound">
+    <div class="shell">
+      <div class="eyebrow reveal"><span class="n">02</span> The Sound</div>
+      <h2 class="title reveal d1">RECORDS OF <span class="psych">the</span> RITUAL</h2>
+      <div class="records">
+        <article class="record reveal">
+          <div class="sleeve">
+            <div class="cover"><img src="assets/cover-cathedral.jpg?v=2" alt="Snake Oil Cathedral album art — red kaleidoscope mandala"></div>
+            <div class="vinyl" aria-hidden="true"></div>
+          </div>
+          <div class="info">
+            <h3>SNAKE OIL CATHEDRAL</h3>
+            <div class="fmt">LP &middot; 10 Tracks &middot; 43 min</div>
+            <p>The big one. Recorded live to tape in a decommissioned church outside Kuna.
+               Crunch sermons, twin-guitar drone, choruses like altar calls.</p>
+            <div class="tracks">
+              <span>Vulture Choir</span><span>Red Milk</span><span>High Desert Hymn</span>
+              <span>Gasoline Halo</span><span>Snake Oil Cathedral</span>
+            </div>
+          </div>
+          <div class="yr">2025</div>
+        </article>
+        <article class="record reveal d1">
+          <div class="sleeve">
+            <div class="cover"><img src="assets/cover-television.jpg?v=2" alt="Television Flowers EP art — red and black liquid vortex"></div>
+            <div class="vinyl" aria-hidden="true"></div>
+          </div>
+          <div class="info">
+            <h3>TELEVISION FLOWERS</h3>
+            <div class="fmt">EP &middot; 5 Tracks &middot; 22 min</div>
+            <p>Late-night transmissions. Slower, stranger, swimming in tremolo —
+               the record that taught the room to sway instead of shove.</p>
+            <div class="tracks">
+              <span>Television Flowers</span><span>Dead Channel Bloom</span><span>Static Lullaby</span>
+            </div>
+          </div>
+          <div class="yr">2024</div>
+        </article>
+        <article class="record reveal d2">
+          <div class="sleeve">
+            <div class="cover"><img src="assets/cover-sagebrush.jpg?v=2" alt="Neon Sagebrush single art — glowing red guitar strings"></div>
+            <div class="vinyl" aria-hidden="true"></div>
+          </div>
+          <div class="info">
+            <h3>NEON SAGEBRUSH</h3>
+            <div class="fmt">Single &middot; Out Now</div>
+            <p>Three minutes of headlight crunch written on the road home from a Nevada
+               festival at 4 a.m. The next chapter starts here.</p>
+            <div class="tracks">
+              <span>Neon Sagebrush</span><span>B/W: Owyhee</span>
+            </div>
+          </div>
+          <div class="yr">2026</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- rites -->
+  <section class="block" id="rites">
+    <div class="shell">
+      <div class="eyebrow reveal"><span class="n">03</span> The Rites</div>
+      <h2 class="title reveal d1">COME <span class="psych">Witness</span></h2>
+      <p class="lede reveal d2">The ritual only truly exists in a room full of people. Idaho first, then west.</p>
+      <div class="rites reveal d2">
+        <div class="rite">
+          <div class="date">AUG 02</div>
+          <div><div class="venue">Cougar Mountain Lodge</div><div class="city">Private Party</div></div>
+          <div></div>
+          <a class="tix" href="contact.html">Private Event</a>
+        </div>
+        <div class="rite">
+          <div class="date">AUG 20</div>
+          <div><div class="venue">Vista Uptown Bar</div><div class="city">Boise, ID</div></div>
+          <div></div>
+          <a class="tix" href="contact.html">Tickets</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- summon -->
+  <section class="block" id="summon">
+    <div class="shell">
+      <div class="summon reveal">
+        <div class="grid-lines" aria-hidden="true"></div>
+        <div class="eyebrow"><span class="n">04</span> Join the Ritual</div>
+        <h2 class="title">FIRST TO <span class="psych">Know</span></h2>
+        <p class="lede">New rites, new records, secret basement shows. One transmission a month.
+           No noise — we save that for the amps.</p>
+        <form action="#" method="post" onsubmit="return false">
+          <input type="email" name="email" placeholder="your@frequency.com" aria-label="Email address" required>
+          <button class="btn solid" type="submit">Summon Me</button>
+        </form>
+        <div class="note">Booking &middot; press &middot; strange visions &rarr; <a href="contact.html" style="color:var(--ember)">summon@ar-ritual.band</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="crypt">
+    <div class="lockup">
+      <img class="wings" src="assets/wings.png" alt="The winged A&R emblem burning in red neon">
+      <div class="row">
+        <a href="band.html">The Duo</a>
+        <a href="music.html">Sound</a>
+        <a href="tour.html">Rites</a>
+        <a href="contact.html">Summon</a>
+      </div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.9.2 2.3.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.3.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.9-.4 2.3-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.3.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.3-.1-1.2-.1-1.6-.1-4.8s0-3.6.1-4.8c.1-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.3-.4 1.2-.1 1.6-.1 4.8-.1zm0 2c-3.1 0-3.5 0-4.7.1-1.1.1-1.5.2-1.8.3-.5.2-.8.4-1.1.7-.3.3-.5.6-.7 1.1-.1.3-.3.7-.3 1.8-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.2 1.5.3 1.8.2.5.4.8.7 1.1.3.3.6.5 1.1.7.3.1.7.3 1.8.3 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.5-.2 1.8-.3.5-.2.8-.4 1.1-.7.3-.3.5-.6.7-1.1.1-.3.3-.7.3-1.8.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.5-.3-1.8-.2-.5-.4-.8-.7-1.1-.3-.3-.6-.5-1.1-.7-.3-.1-.7-.3-1.8-.3-1.2-.1-1.6-.1-4.7-.1zm0 3.4a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8zm0 8.9a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zm6.9-9.1a1.3 1.3 0 1 1-2.6 0 1.3 1.3 0 0 1 2.6 0z"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12c0 2 .2 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.3-1.9.5-3.8.5-5.8s-.2-3.9-.5-5.8zM9.5 15.6V8.4L15.8 12l-6.3 3.6z"/></svg></a>
+        <a href="#" aria-label="Spotify"><svg viewBox="0 0 24 24"><path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm5.5 17.3c-.2.4-.7.5-1 .3-2.9-1.8-6.5-2.2-10.8-1.2-.4.1-.8-.2-.9-.6-.1-.4.2-.8.6-.9 4.7-1.1 8.7-.6 11.9 1.4.3.2.4.7.2 1zm1.5-3.3c-.3.4-.8.6-1.3.3-3.3-2-8.3-2.6-12.2-1.4-.5.1-1-.1-1.1-.6-.1-.5.1-1 .6-1.1 4.5-1.4 10-.7 13.8 1.6.4.2.5.8.2 1.2zm.1-3.4C15.2 8.3 8.8 8.1 5.1 9.2c-.6.2-1.2-.2-1.3-.7-.2-.6.2-1.2.7-1.3 4.3-1.3 11.3-1.1 15.8 1.6.5.3.7 1 .4 1.5-.3.4-1 .6-1.6.3z"/></svg></a>
+        <a href="#" aria-label="Bandcamp"><svg viewBox="0 0 24 24"><path d="M0 18.75l7.44-13.5H24l-7.44 13.5H0z"/></svg></a>
+      </div>
+      <div class="fine">&copy; 2026 A&amp;R &middot; Boise, Idaho &middot; All frequencies reserved</div>
+    </div>
+  </footer>
+</main>
+
+<script src="js/ritual.js?v=5"></script>
+</body>
+</html>

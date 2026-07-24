@@ -1,0 +1,52 @@
+/* A&R — self-hosted type. Big Shoulders (structural display), Sancreek (psych
+   poster accent), Fraunces (editorial serif), Space Mono (HUD). Latin subsets. */
+
+@font-face {
+  font-family: "Big Shoulders";
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url("f3.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 300 900;
+  font-display: swap;
+  src: url("f6.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: swap;
+  src: url("f9.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Sancreek";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("f11.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Space Mono";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("f14.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("f17.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("f20.woff2") format("woff2");
+}

@@ -1,0 +1,29 @@
+# Local tooling
+.claude/
+
+# Build workspace — source clips, drafts, keyframes, master renders. Not shipped.
+build/
+
+# Unused / source-only assets — kept locally, never deployed
+assets/A&R.mp4
+assets/Neon Sagebrush/
+assets/SNAKE OIL CATHEDRAL/
+assets/Television Flowers/
+assets/orig_covers/
+assets/ash.jpg
+assets/download.jpg
+assets/rune.jpg
+assets/tvf.jpg
+assets/wings.jpg
+
+# Root design references — not part of the site
+reference_1.png
+reference_2.png
+reference_3.png
+
+# Original full-size frames, backed up before payload optimization (24MB optimized set ships)
+frames_backup_orig/
+
+# OS junk
+.DS_Store
+Thumbs.db

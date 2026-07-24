@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summon — A&R</title>
+<meta name="description" content="Booking, press, and transmissions — summon the A&R psychedelic rock duo from Boise, Idaho.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="css/ar.css?v=3">
+</head>
+<body>
+<div class="cursor" aria-hidden="true"></div>
+
+<header class="bar">
+  <a class="sigil" href="index.html" aria-label="A&R home">
+    <img src="assets/logo.jpg" alt="A&amp;R logo">
+  </a>
+  <nav aria-label="Primary">
+    <a href="band.html">The Duo</a>
+    <a href="music.html">Sound</a>
+    <a href="tour.html">Rites</a>
+    <a href="contact.html" aria-current="page">Summon</a>
+    <a class="cta" href="tour.html">Get Tickets</a>
+  </nav>
+</header>
+
+<canvas id="psy" aria-hidden="true"></canvas>
+<main class="world">
+  <section class="subhero">
+    <div class="backdrop" style="background-image:url('assets/cover-television.jpg')" aria-hidden="true"></div>
+    <h1>SUMMON <span class="psych">Us</span></h1>
+  </section>
+
+  <section class="block">
+    <div class="shell">
+      <div class="summon reveal">
+        <div class="grid-lines" aria-hidden="true"></div>
+        <div class="eyebrow"><span class="n">&#9736;</span> Transmissions</div>
+        <h2 class="title">SPEAK <span class="psych">and we</span> APPEAR</h2>
+        <p class="lede">Booking a rite, writing a piece, pressing our vinyl, or just saw something
+           in the smoke you need to tell us about — every message reaches a human. Usually ROBYN.
+           AARON answers the strange ones.</p>
+        <form action="#" method="post" onsubmit="return false">
+          <input type="email" name="email" placeholder="your@frequency.com" aria-label="Email address" required>
+          <button class="btn solid" type="submit">Transmit</button>
+        </form>
+        <div class="note">
+          Booking &rarr; <span style="color:var(--ember)">summon@ar-ritual.band</span> &middot;
+          Press &rarr; <span style="color:var(--ember)">press@ar-ritual.band</span> &middot;
+          Boise, Idaho
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block manifesto">
+    <div class="shell">
+      <blockquote class="reveal">
+        &ldquo;Every message is a <span class="lit">séance</span>.
+        We always <span class="lit">answer</span>.&rdquo;
+        <cite>&mdash; the duo</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <footer class="crypt">
+    <div class="lockup">
+      <img class="wings" src="assets/wings.png" alt="The winged A&R emblem burning in red neon">
+      <div class="row">
+        <a href="band.html">The Duo</a>
+        <a href="music.html">Sound</a>
+        <a href="tour.html">Rites</a>
+        <a href="contact.html">Summon</a>
+      </div>
+      <div class="fine">&copy; 2026 A&amp;R &middot; Boise, Idaho &middot; All frequencies reserved</div>
+    </div>
+  </footer>
+</main>
+<script src="js/ritual.js?v=5"></script>
+</body>
+</html>

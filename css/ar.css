@@ -542,6 +542,7 @@ h2.title .psych {
   content: ""; position: absolute; inset: 0;
   background: linear-gradient(90deg, rgba(255, 36, 56, .14), transparent 60%);
   opacity: 0; transition: opacity .35s;
+  pointer-events: none;
 }
 .rite:hover { padding-left: clamp(14px, 2vw, 30px); }
 .rite:hover::before { opacity: 1; }
@@ -555,6 +556,7 @@ h2.title .psych {
 }
 .rite .city { font-family: var(--font-mono); font-size: clamp(10.5px, 1vw, 12.5px); letter-spacing: .24em; text-transform: uppercase; color: var(--smoke); }
 .rite .tix {
+  position: relative; z-index: 1;
   font-family: var(--font-mono); font-size: 11px; letter-spacing: .24em; text-transform: uppercase;
   border: 1px solid var(--line); border-radius: 999px; padding: 10px 20px;
   transition: background .3s, color .3s, box-shadow .3s, border-color .3s;

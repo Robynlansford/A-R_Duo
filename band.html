@@ -4,29 +4,47 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Duo — A&R</title>
-<meta name="description" content="AARON & ROBYN — the two bodies behind the A&R psychedelic rock ritual, Boise, Idaho.">
+<meta name="description" content="AARON and ROBYN — the two bodies behind the A&R psychedelic rock ritual, Boise, Idaho.">
+<meta name="theme-color" content="#060304">
+<link rel="canonical" href="https://robynlansford.github.io/A-R_Duo/band.html">
+<meta property="og:title" content="The Duo — A&R">
+<meta property="og:description" content="AARON and ROBYN — the two bodies behind the A&R psychedelic rock ritual, Boise, Idaho.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://robynlansford.github.io/A-R_Duo/band.html">
+<meta property="og:image" content="https://robynlansford.github.io/A-R_Duo/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Duo — A&R">
+<meta name="twitter:description" content="AARON and ROBYN — the two bodies behind the A&R psychedelic rock ritual, Boise, Idaho.">
+<meta name="twitter:image" content="https://robynlansford.github.io/A-R_Duo/assets/og.jpg">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
-<link rel="stylesheet" href="css/ar.css?v=3">
+<link rel="stylesheet" href="css/ar.css?v=4">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <div class="cursor" aria-hidden="true"></div>
 
 <header class="bar">
   <a class="sigil" href="index.html" aria-label="A&R home">
     <img src="assets/logo.jpg" alt="A&amp;R logo">
   </a>
-  <nav aria-label="Primary">
+  <div class="bar-actions">
+    <a class="cta" href="tour.html">See Dates</a>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+    </button>
+  </div>
+  <nav id="site-nav" aria-label="Primary">
     <a href="band.html" aria-current="page">The Duo</a>
     <a href="music.html">Sound</a>
     <a href="tour.html">Rites</a>
     <a href="contact.html">Summon</a>
-    <a class="cta" href="tour.html">Get Tickets</a>
+    <a class="cta" href="contact.html">Inquire</a>
   </nav>
 </header>
 
 <canvas id="psy" aria-hidden="true"></canvas>
-<main class="world">
+<main class="world" id="main">
   <section class="subhero">
     <div class="backdrop" style="background-image:url('assets/stage-wide.jpg')" aria-hidden="true"></div>
     <h1>TWO BODIES<br>ONE <span class="psych">Storm</span></h1>
@@ -70,7 +88,7 @@
       <blockquote class="reveal">
         &ldquo;Boise gave us <span class="lit">space</span>. The desert gave us
         <span class="lit">patience</span>. The crunch pedal gave us everything else.&rdquo;
-        <cite>&mdash; ROBYN, Treefort interview, 2025</cite>
+        <cite>&mdash; ROBYN</cite>
       </blockquote>
     </div>
   </section>
@@ -88,6 +106,7 @@
     </div>
   </footer>
 </main>
+<script src="js/site.js?v=1"></script>
 <script src="js/ritual.js?v=5"></script>
 </body>
 </html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://robynlansford.github.io/A-R_Duo/sitemap.xml

@@ -4,29 +4,47 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Summon — A&R</title>
-<meta name="description" content="Booking, press, and transmissions — summon the A&R psychedelic rock duo from Boise, Idaho.">
+<meta name="description" content="Booking and press for A&R, a psychedelic rock duo from Boise, Idaho. Write the duo — this page opens your email app. No form backend is wired.">
+<meta name="theme-color" content="#060304">
+<link rel="canonical" href="https://robynlansford.github.io/A-R_Duo/contact.html">
+<meta property="og:title" content="Summon — A&R">
+<meta property="og:description" content="Booking and press for A&R, a psychedelic rock duo from Boise, Idaho.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://robynlansford.github.io/A-R_Duo/contact.html">
+<meta property="og:image" content="https://robynlansford.github.io/A-R_Duo/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Summon — A&R">
+<meta name="twitter:description" content="Booking and press for A&R, a psychedelic rock duo from Boise, Idaho.">
+<meta name="twitter:image" content="https://robynlansford.github.io/A-R_Duo/assets/og.jpg">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
-<link rel="stylesheet" href="css/ar.css?v=3">
+<link rel="stylesheet" href="css/ar.css?v=4">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <div class="cursor" aria-hidden="true"></div>
 
 <header class="bar">
   <a class="sigil" href="index.html" aria-label="A&R home">
     <img src="assets/logo.jpg" alt="A&amp;R logo">
   </a>
-  <nav aria-label="Primary">
+  <div class="bar-actions">
+    <a class="cta" href="tour.html">See Dates</a>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+    </button>
+  </div>
+  <nav id="site-nav" aria-label="Primary">
     <a href="band.html">The Duo</a>
     <a href="music.html">Sound</a>
     <a href="tour.html">Rites</a>
     <a href="contact.html" aria-current="page">Summon</a>
-    <a class="cta" href="tour.html">Get Tickets</a>
+    <a class="cta" href="contact.html">Inquire</a>
   </nav>
 </header>
 
 <canvas id="psy" aria-hidden="true"></canvas>
-<main class="world">
+<main class="world" id="main">
   <section class="subhero">
     <div class="backdrop" style="background-image:url('assets/cover-television.jpg')" aria-hidden="true"></div>
     <h1>SUMMON <span class="psych">Us</span></h1>
@@ -38,18 +56,40 @@
         <div class="grid-lines" aria-hidden="true"></div>
         <div class="eyebrow"><span class="n">&#9736;</span> Transmissions</div>
         <h2 class="title">SPEAK <span class="psych">and we</span> APPEAR</h2>
-        <p class="lede">Booking a rite, writing a piece, pressing our vinyl, or just saw something
-           in the smoke you need to tell us about — every message reaches a human. Usually ROBYN.
-           AARON answers the strange ones.</p>
-        <form action="#" method="post" onsubmit="return false">
-          <input type="email" name="email" placeholder="your@frequency.com" aria-label="Email address" required>
-          <button class="btn solid" type="submit">Transmit</button>
-        </form>
-        <div class="note">
-          Booking &rarr; <span style="color:var(--ember)">summon@ar-ritual.band</span> &middot;
-          Press &rarr; <span style="color:var(--ember)">press@ar-ritual.band</span> &middot;
-          Boise, Idaho
+        <p class="lede">Booking a rite, writing a piece, pressing vinyl, or something you saw
+           in the smoke — this form does not post to a CRM. It opens your email app with the
+           message filled in. Usually ROBYN reads it. AARON takes the strange ones.</p>
+
+        <div class="paths">
+          <a href="mailto:summon@ar-ritual.band">summon@ar-ritual.band</a>
+          <a href="mailto:press@ar-ritual.band">press@ar-ritual.band</a>
         </div>
+        <p class="note">No public phone is listed yet. Leave a number in the form if you want a call back.</p>
+
+        <form class="stack" action="mailto:summon@ar-ritual.band" method="get" data-form="mailto">
+          <label class="sr-only" for="c-name">Name</label>
+          <input id="c-name" type="text" name="name" autocomplete="name" required placeholder="Your name">
+
+          <div class="form-row">
+            <label class="sr-only" for="c-email">Email</label>
+            <input id="c-email" type="email" name="email" autocomplete="email" required placeholder="you@email.com">
+            <label class="sr-only" for="c-tel">Phone</label>
+            <input id="c-tel" type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="Phone (optional)">
+          </div>
+
+          <label class="sr-only" for="c-topic">Topic</label>
+          <select id="c-topic" name="topic">
+            <option value="Booking">Booking</option>
+            <option value="Press">Press</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <label class="sr-only" for="c-msg">Message</label>
+          <textarea id="c-msg" name="message" required rows="6" placeholder="What should we know?"></textarea>
+
+          <button class="btn solid" type="submit">Open in email</button>
+          <p class="form-status" role="status" hidden></p>
+        </form>
       </div>
     </div>
   </section>
@@ -57,8 +97,7 @@
   <section class="block manifesto">
     <div class="shell">
       <blockquote class="reveal">
-        &ldquo;Every message is a <span class="lit">séance</span>.
-        We always <span class="lit">answer</span>.&rdquo;
+        &ldquo;Every message is a <span class="lit">séance</span>.&rdquo;
         <cite>&mdash; the duo</cite>
       </blockquote>
     </div>
@@ -77,6 +116,7 @@
     </div>
   </footer>
 </main>
+<script src="js/site.js?v=1"></script>
 <script src="js/ritual.js?v=5"></script>
 </body>
 </html>

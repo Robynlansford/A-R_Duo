@@ -5,28 +5,46 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sound — A&R</title>
 <meta name="description" content="Records of the ritual — Snake Oil Cathedral, Television Flowers, Neon Sagebrush. The recorded sound of A&R.">
+<meta name="theme-color" content="#060304">
+<link rel="canonical" href="https://robynlansford.github.io/A-R_Duo/music.html">
+<meta property="og:title" content="Sound — A&R">
+<meta property="og:description" content="Records of the ritual — Snake Oil Cathedral, Television Flowers, Neon Sagebrush.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://robynlansford.github.io/A-R_Duo/music.html">
+<meta property="og:image" content="https://robynlansford.github.io/A-R_Duo/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sound — A&R">
+<meta name="twitter:description" content="Records of the ritual — Snake Oil Cathedral, Television Flowers, Neon Sagebrush.">
+<meta name="twitter:image" content="https://robynlansford.github.io/A-R_Duo/assets/og.jpg">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
-<link rel="stylesheet" href="css/ar.css?v=3">
+<link rel="stylesheet" href="css/ar.css?v=5">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <div class="cursor" aria-hidden="true"></div>
 
 <header class="bar">
   <a class="sigil" href="index.html" aria-label="A&R home">
     <img src="assets/logo.jpg" alt="A&amp;R logo">
   </a>
-  <nav aria-label="Primary">
+  <div class="bar-actions">
+    <a class="cta" href="tour.html">See Dates</a>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+    </button>
+  </div>
+  <nav id="site-nav" aria-label="Primary">
     <a href="band.html">The Duo</a>
     <a href="music.html" aria-current="page">Sound</a>
     <a href="tour.html">Rites</a>
     <a href="contact.html">Summon</a>
-    <a class="cta" href="tour.html">Get Tickets</a>
+    <a class="cta" href="contact.html">Inquire</a>
   </nav>
 </header>
 
 <canvas id="psy" aria-hidden="true"></canvas>
-<main class="world">
+<main class="world" id="main">
   <section class="subhero">
     <div class="backdrop" style="background-image:url('assets/cover-cathedral.jpg')" aria-hidden="true"></div>
     <h1>RECORDS <span class="psych">of the</span> RITUAL</h1>
@@ -66,7 +84,7 @@
             <h3>TELEVISION FLOWERS</h3>
             <div class="fmt">EP &middot; 5 Tracks &middot; 22 min &middot; 2024</div>
             <p>The late-night record. Written between 2 and 5 a.m. in a basement on the Bench,
-               all tremolo and slow bloom. The one fans put on when the party thins out and
+               all tremolo and slow bloom. The one to put on when the party thins out and
                nobody wants to say goodnight.</p>
             <div class="tracks">
               <span>01 Television Flowers</span><span>02 Dead Channel Bloom</span>
@@ -83,7 +101,7 @@
           </div>
           <div class="info">
             <h3>NEON SAGEBRUSH</h3>
-            <div class="fmt">Single &middot; Out Now &middot; 2026</div>
+            <div class="fmt">Single &middot; 2026</div>
             <p>Three minutes of headlight crunch written on the drive home from a Nevada festival
                at 4 a.m. — the first taste of LP2. Louder, faster, somehow lonelier.</p>
             <div class="tracks">
@@ -119,6 +137,7 @@
     </div>
   </footer>
 </main>
+<script src="js/site.js?v=1"></script>
 <script src="js/ritual.js?v=5"></script>
 </body>
 </html>
